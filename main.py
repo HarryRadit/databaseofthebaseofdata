@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///students.sqlite3'
 app.config['SECRET_KEY'] = "IMGAY"
 db = SQLAlchemy(app)
-
+print(x)
 
 class Students(db.Model):
     id = db.Column(db.Integer, primary_key=True)
