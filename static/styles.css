@@ -115,3 +115,20 @@ label.light {
   }
 
 }
+table=[
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    min-width:  800px;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    font-size: 20px;
+]
+
+h1{
+margin: 30px 0 30px 0;
+font-size: 30px;
+color: #fff;
+}

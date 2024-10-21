@@ -34,12 +34,13 @@ def add_student():
         student = Students(name, age,)
         db.session.add(student)
         db.session.commit()
-        return redirect(url_for('show_details.html'))
+        return redirect(url_for('show_details'))
     return render_template('add_student.html')
 
-@app.route('/show_details.html')
+@app.route('/showdetails')
 def show_details():
-    return render_template('show_details.html')
+    all_students = Students.query.all()
+    return render_template('show_details.html', students = all_students)
 
 if __name__ == '__main__':
     with app.app_context():
